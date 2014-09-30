@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="15cm" height="9cm" viewBox="124 188 293 165" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="125" y="197.5" width="62.65" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="125" y="197.5" width="62.65" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="156.325" y="216.5">Client</text>
+    <rect style="fill: #ffffff" x="125" y="225.5" width="62.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="125" y="225.5" width="62.65" height="8"/>
+    <rect style="fill: #ffffff" x="125" y="233.5" width="62.65" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="125" y="233.5" width="62.65" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="305.3" y="308" width="69.45" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="305.3" y="308" width="69.45" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="340.025" y="327">Server</text>
+    <rect style="fill: #ffffff" x="305.3" y="336" width="69.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="305.3" y="336" width="69.45" height="8"/>
+    <rect style="fill: #ffffff" x="305.3" y="344" width="69.45" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="305.3" y="344" width="69.45" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="265" y="189.5" width="150.05" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="265" y="189.5" width="150.05" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="340.025" y="205.5">&lt;&lt;interface&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:italic;font-weight:700" x="340.025" y="224.5">Client Interface</text>
+    <rect style="fill: #ffffff" x="265" y="233.5" width="150.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="265" y="233.5" width="150.05" height="8"/>
+    <rect style="fill: #ffffff" x="265" y="241.5" width="150.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="265" y="241.5" width="150.05" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="340.025,268.744 340.025,267.508 340.025,305.994 340.025,306.994 "/>
+    <polygon style="fill: #ffffff" points="348.025,268.744 340.025,252.744 332.025,268.744 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="348.025,268.744 340.025,252.744 332.025,268.744 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="188.658,219.5 189.658,219.5 254.991,219.5 257.285,219.5 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="244.638,224.5 260.638,219.5 244.638,214.5 "/>
+  </g>
+</svg>

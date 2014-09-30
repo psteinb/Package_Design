@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="16cm" viewBox="34 149 550 311" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="161" y="169" width="112.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="161" y="169" width="112.1" height="28"/>
+    <rect style="fill: #ffffff" x="161" y="151" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="161" y="151" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="167" y="186.9">
+      <tspan x="167" y="186.9">MyApplication</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="363" y="288" width="58.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="363" y="288" width="58.2" height="28"/>
+    <rect style="fill: #ffffff" x="363" y="270" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="363" y="270" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="369" y="305.9">
+      <tspan x="369" y="305.9">MyTask</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="210.55" y="289" width="96.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="210.55" y="289" width="96.7" height="28"/>
+    <rect style="fill: #ffffff" x="210.55" y="271" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="210.55" y="271" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="216.55" y="306.9">
+      <tspan x="216.55" y="306.9">Task Window</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="35" y="286" width="119.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="35" y="286" width="119.8" height="28"/>
+    <rect style="fill: #ffffff" x="35" y="268" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="35" y="268" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="41" y="303.9">
+      <tspan x="41" y="303.9">Message Window</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="154" y="413" width="65.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="154" y="413" width="65.9" height="28"/>
+    <rect style="fill: #ffffff" x="154" y="395" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="154" y="395" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="160" y="430.9">
+      <tspan x="160" y="430.9">Windows</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="488" y="308" width="73.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="488" y="308" width="73.6" height="28"/>
+    <rect style="fill: #ffffff" x="488" y="290" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="488" y="290" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="494" y="325.9">
+      <tspan x="494" y="325.9">Database</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="217.05,198.007 217.05,230 258.9,230 258.9,263.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="253.9,250.639 258.9,266.639 263.9,250.639 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="217.05,198.007 217.05,228.5 94.9,228.5 94.9,260.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="89.9,247.639 94.9,263.639 99.9,247.639 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="217.05,197 336,197 336,302 355.304,302 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="342.657,307 358.657,302 342.657,297 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="94.9,315.007 94.9,350.5 186.95,350.5 186.95,387.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="181.95,374.639 186.95,390.639 191.95,374.639 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="258.9,318.007 258.9,352 186.95,352 186.95,387.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="181.95,374.639 186.95,390.639 191.95,374.639 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="392.1,317.007 392.1,337.504 317.417,337.504 317.417,359.295 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="312.417,346.647 317.417,362.647 322.417,346.647 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="258.9,318.007 258.9,380 284.455,380 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="271.808,385 287.808,380 271.808,375 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="429.65,429 443.5,429 443.5,427 227.611,427 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="240.258,422 224.258,427 240.258,432 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="392.1,317.007 392.1,352.5 429.65,352.5 429.65,389.287 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="424.65,376.639 429.65,392.639 434.65,376.639 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="422.204,302 458.5,302 458.5,322 480.542,322 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="467.895,327 483.895,322 467.895,317 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="429.65,429 429.65,428 574.5,428 574.5,379.705 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.5,392.353 574.5,376.353 569.5,392.353 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="574.5,365 574.5,183 279.805,183 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="292.453,178 276.453,183 292.453,188 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="389" y="415" width="81.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="389" y="415" width="81.3" height="28"/>
+    <rect style="fill: #ffffff" x="389" y="397" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="389" y="397" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="395" y="432.9">
+      <tspan x="395" y="432.9">MyDialogs</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="292.167" y="366" width="50.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="292.167" y="366" width="50.5" height="28"/>
+    <rect style="fill: #ffffff" x="292.167" y="348" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="292.167" y="348" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="298.167" y="383.9">
+      <tspan x="298.167" y="383.9">Tasks</tspan>
+    </text>
+  </g>
+</svg>
