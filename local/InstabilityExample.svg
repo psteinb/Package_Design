@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="10cm" viewBox="539 186 314 191" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="660.6" y="316" width="58.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660.6" y="316" width="58.2" height="28"/>
+    <rect style="fill: #ffffff" x="660.6" y="298" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="660.6" y="298" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="666.6" y="333.9">
+      <tspan x="666.6" y="333.9">Stable</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="592" y="205.05" width="73.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="592" y="205.05" width="73.6" height="28"/>
+    <rect style="fill: #ffffff" x="592" y="187.05" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="592" y="187.05" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="598" y="222.95">
+      <tspan x="598" y="222.95">Instable</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="714.8" y="205.05" width="73.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="714.8" y="205.05" width="73.6" height="28"/>
+    <rect style="fill: #ffffff" x="714.8" y="187.05" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="714.8" y="187.05" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="720.8" y="222.95">
+      <tspan x="720.8" y="222.95">Instable</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="628.8,234.057 628.8,330 653.895,330 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="641.247,335 657.247,330 641.247,325 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="751.6,234.057 751.6,330 725.505,330 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="738.153,325 722.153,330 738.153,335 "/>
+  </g>
+  <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="815" y="215.525">
+    <tspan x="815" y="215.525">I = 1</tspan>
+  </text>
+  <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="539.8" y="215.525">
+    <tspan x="539.8" y="215.525">I = 1</tspan>
+  </text>
+  <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:italic;font-weight:normal" x="670.494" y="372.8">
+    <tspan x="670.494" y="372.8">I = 0</tspan>
+  </text>
+</svg>

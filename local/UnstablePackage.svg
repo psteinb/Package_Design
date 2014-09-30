@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="11cm" height="7cm" viewBox="-2820 -1173 211 139" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-2739.91" y="-1153.33" width="50" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="-2739.91" y="-1153.33" width="50" height="28"/>
+    <rect style="fill: #ffffff" x="-2739.91" y="-1171.33" width="30" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" x="-2739.91" y="-1171.33" width="30" height="18"/>
+    <text font-size="12.7998" style="fill: #ff0000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-2733.91" y="-1135.43">
+      <tspan x="-2733.91" y="-1135.43">Y</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2714.91" y="-1139.33">
+    <tspan x="-2714.91" y="-1139.33"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #ff0000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-2714.91" y="-1139.33">
+    <tspan x="-2714.91" y="-1139.33"></tspan>
+  </text>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="-2819" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2819" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: #ffffff" x="-2819" y="-1081.14" width="30" height="18"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2819" y="-1081.14" width="30" height="18"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-2813" y="-1045.24">
+        <tspan x="-2813" y="-1045.24"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="-2739.91" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2739.91" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: #ffffff" x="-2739.91" y="-1081.14" width="30" height="18"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2739.91" y="-1081.14" width="30" height="18"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-2733.91" y="-1045.24">
+        <tspan x="-2733.91" y="-1045.24"></tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="-2660.82" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2660.82" y="-1063.14" width="50" height="28"/>
+      <rect style="fill: #ffffff" x="-2660.82" y="-1081.14" width="30" height="18"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-2660.82" y="-1081.14" width="30" height="18"/>
+      <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-2654.82" y="-1045.24">
+        <tspan x="-2654.82" y="-1045.24"></tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="-2714.91,-1125.33 -2714.91,-1107.74 -2794,-1107.74 -2794,-1088.86 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2799,-1101.5 -2794,-1085.5 -2789,-1101.5 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="-2714.91,-1125.33 -2714.91,-1107.96 -2711.74,-1107.96 -2711.74,-1089.3 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2716.74,-1101.95 -2711.74,-1085.95 -2706.74,-1101.95 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="-2714.91,-1125.33 -2714.91,-1108.31 -2638.2,-1108.31 -2638.2,-1090.01 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-2643.2,-1102.65 -2638.2,-1086.65 -2633.2,-1102.65 "/>
+  </g>
+</svg>

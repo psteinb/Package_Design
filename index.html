@@ -46,548 +46,339 @@
 
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
-	<!-- ALL SLIDES GO HERE -->
-	<!-- Each section element contains an individual slide -->
-	<section>
-	<h1>Package Design Principles</h1>
-	<p><br></p>
-	<h3> A Personal Introduction</h3>
-	<p>Berlin, Oct 1, 2014<br>
-		<a href="mailto:steinbach@scionics.de">Peter Steinbach</a>
-	</p>        
-	</section>
+		  <!-- ALL SLIDES GO HERE -->
+		  <!-- Each section element contains an individual slide -->
+		  <section>
+		    <h1>Package<br>Design<br>Principles</h1>
+		    <p><br></p>
+		    <h3> A Personal Introduction</h3>
+		    <p>Berlin, Oct 1, 2014<br>
+		      <a href="mailto:steinbach@scionics.de">Peter Steinbach</a>
+		    </p>        
+		  </section>
 
-	<section>
-	  <h2>Disclaimer</h2>
-	  <p style="text-align: left;">This work is licensed under a<br> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0<br> International License</a>.</p>
-	  <div style="position: absolute; top: 20%; right: 10%; max-width: 80%;">
-	  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img width="176" alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-	  </div>
+		  <section>
+		    <h2>Disclaimer</h2>
+		    <p style="text-align: left;">This work is licensed under a<br> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0<br> International License</a>.</p>
+		    <div style="position: absolute; top: 20%; right: 10%; max-width: 80%;">
+		      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img width="176" alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+		    </div>
 
-	  <p style="text-align: left;"><br>
-	    All material contained in the slides are linked to their source if not produced by the author. If you find intellectual property is not attributed to your satisfaction, feel free to contact <a href="mailto:steinbach@scionics.de">me</a>.
-	    <br><br>
-	    For feedback, forks, discussions and contributions, go to 
-	    <center>
-	      <a href="https://github.com/psteinb/PackageDesign">github.com/psteinb/TBBIntro</a>.
-	    </center>
-	  </p>
-	</section>
+		    <p style="text-align: left;"><br>
+		      All material contained in the slides are linked to their source if not produced by the author. If you find intellectual property is not attributed to your satisfaction, feel free to contact <a href="mailto:steinbach@scionics.de">me</a>.
+		      <br><br>
+		      For feedback, forks, discussions and contributions, go to 
+		      <center>
+			<a href="https://github.com/psteinb/PackageDesign">github.com/psteinb/Package_Design</a>.
+		      </center>
+		    </p>
+		  </section>
 
 
-	<section>
-	  <section>
-		<h1>A Package</h1>
-		<ul>
-		  <li>software suite or application</li>
-		  <li>set of classes or functions that provide some limited functionality</li>
-		</ul>
-	</section>
+		  <section>
+		    <section>
+		      <h1>What is a <b>Package</b>?</h1>
+		      <p><br><br></p>
+		      <ul style="font-size: 120%; line-height: 150%">
+			<li>software suite or application</li>
+			<li>set of classes or functions that provide some limited functionality</li>
+		      </ul>
+		    </section>
 
-	<section>
-		<h1>The Obvious</h1>
-	</section>
+		    <section>
+		      <h1>Obvious Suggestions</h1>
+		    </section>
 
-	<section>
-	  <h2>Usability counts</h2>
-	  <p><br></p>
-	  <pre><code data-trim>
-configure: WARNING: harminv support is disabled
-checking mpb.h usability... no
-checking mpb.h presence... no
-checking for mpb.h... no
-checking for cblas_cgemm... no
-checking for cblas_cgemm in -lgslcblas... yes
-checking for gsl_sf_bessel_Jn in -lgsl... yes
-checking for deflate in -lz... yes
-checking for H5Pcreate in -lhdf5... yes
-checking for hdf5.h... yes
-checking for guile-config... guile-config
-/usr/bin/guile-config: line 5: /usr/bin/guile: No such file or directory
-/usr/bin/guile-config: line 5: /usr/bin/guile: No such file or directory
-checking if linking to guile works... no
-configure: error: guile-config is broken
-	  </pre></code>
-	  <p><br></p>
-	  <h3>Reduce dependencies to a manageable level!</h3>
-	</section>
+		    <section>
+		      <h2>Usability counts</h2>
+		      <p><br></p>
+		      <pre><code data-trim>
+			  configure: WARNING: harminv support is disabled
+			  checking mpb.h usability... no
+			  checking mpb.h presence... no
+			  checking for mpb.h... no
+			  checking for cblas_cgemm... no
+			  checking for cblas_cgemm in -lgslcblas... yes
+			  checking for gsl_sf_bessel_Jn in -lgsl... yes
+			  checking for deflate in -lz... yes
+			  checking for H5Pcreate in -lhdf5... yes
+			  checking for hdf5.h... yes
+			  checking for guile-config... guile-config
+			  /usr/bin/guile-config: line 5: /usr/bin/guile: No such file or directory
+			  /usr/bin/guile-config: line 5: /usr/bin/guile: No such file or directory
+			  checking if linking to guile works... no
+			  configure: error: guile-config is broken
+		      </pre></code>
+		      <p><br></p>
+		      <h3>Reduce dependencies to a manageable level!</h3>
+		    </section>
 
-	<section>
-	  <h2>Be social, Be accessible</h2>
-	  <figure>
-		<a href="github.com" target="_blank">
-			<img height="500" style="max-width: 60%" src="local/github_screenshot.png" alt="Github Repo">	
-		</a>
+		    <section>
+		      <h2>Be social, Be accessible</h2>
+		      <figure>
+			<a href="github.com" target="_blank">
+			  <img height="500" style="max-width: 60%" src="local/github_screenshot.png" alt="Github Repo">	
+			</a>
 			<figcaption style="font-size: 70%">from <a href="https://github.com/psteinb" target="_blank">github.com/psteinb</a>
 			</figcaption>
-		</figure>
-	</section>
+		      </figure>
+		    </section>
 
-	<section>	  
-	  <h2>Version Control</h2>
-	  <figure>
-		<a href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/" target="_blank">
-			<img style="max-height: 45%; min-height: 40%" src="http://betterexplained.com/wp-content/uploads/version_control/distributed/centralized_example.png" alt="Centralized Version Control">	
-		</a>
-		<a href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/" target="_blank">
-			<img style="max-height: 45%; min-height: 40%" src="http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_example.png" alt="Distributed Version Control">	
-		</a>
+		    <section>	  
+		      <h2>Version Control</h2>
+		      <figure>
+			<a href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/" target="_blank">
+			  <img style="max-width: 47%; min-width: 40%; vertical-align: middle" src="http://betterexplained.com/wp-content/uploads/version_control/distributed/centralized_example.png" alt="Centralized Version Control">
+			</a>
+			<a href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/" target="_blank">
+			  <img style="max-width: 47%; min-width: 40%; vertical-align: middle" src="http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_example.png" alt="Distributed Version Control">
+			</a>
 			<figcaption style="font-size: 70%">from <a href="http://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/" target="_blank">betterexplained.com</a>
 			</figcaption>
-	  </figure>
-	</section>
+		      </figure>
+		    </section>
 
-	<section>
-	  <h2>There is more</h2>
-	  <figure>
-		<a href="http://aosabook.org/en/index.html" target="_blank">
-			<img style="max-width: 100%; min-width: 80%" src="local/aosa_screenshot.png" alt="Centralized Version Control">	
-		</a>
-		<figcaption style="font-size: 70%">from <a href="http://aosabook.org/en/index.html" target="_blank">aosabook.org</a>
-		</figcaption>
-	  </figure>
-	  <p class="fragment"><br>
-	    <h3 class="fragment"><b>+ vast literature!</b></h3>
-	  </p>
-	  
-	</section>
-	</section>
+		    <section>
+		      <h2>There is more</h2>
+		      <figure>
+			<a href="http://aosabook.org/en/index.html" target="_blank">
+			  <center>
+			    <img style="max-width: 100%; min-width: 95%" src="local/aosa_screenshot.png" alt="Open Source Software Architecture">
+			    <!-- <img src="local/aosa_screenshot.png" alt="Centralized Version Control" class="stretch"> -->
+			  </center>
+			</a>
+			<figcaption style="font-size: 70%">from <a href="http://aosabook.org/en/index.html" target="_blank" >aosabook.org</a>
+			</figcaption>
+		      </figure>
+		      <p class="fragment"><br>
+			<h3 class="fragment"><b>+ vast literature!</b></h3>
+		      </p>
+		      
+		    </section>
+		  </section>
 
-	<section>
-	  <section>
-	  <h2>The Reference</h2>
-	  <figure>
-		<a href="http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445" target="_blank">
-			<img style="max-width: 60%; min-width: 50%" src="http://www.softwaretestingclass.com/wp-content/uploads/2012/10/Agile-Software-Development-Principles-Patterns-and-Practices.jpg" alt="Github Repo">	
-		</a>
-		<a href="http://www.objectmentor.com/omTeam/martin_r.html" target="_blank">
-		  
-			<img style="max-width: 30%; min-width: 20%; " src="http://www.objectmentor.com/Images/photo_martin_r.jpg" alt="Robert C Martin">	
-		</a>
+		  <section>
+		    <section>
+		      <h2>The Reference</h2>
+		      <figure>
+			<a href="http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445" target="_blank">
+			  <img style="max-width: 60%; min-width: 50%" src="http://www.softwaretestingclass.com/wp-content/uploads/2012/10/Agile-Software-Development-Principles-Patterns-and-Practices.jpg" alt="Github Repo">	
+			</a>
+			<a href="http://www.objectmentor.com/omTeam/martin_r.html" target="_blank">
+			  
+			  <img style="max-width: 30%; min-width: 20%; " src="http://www.objectmentor.com/Images/photo_martin_r.jpg" alt="Robert C Martin">	
+			</a>
 			<figcaption style="font-size: 70%">Robert C. Martin, <a href="http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445" target="_blank">Agile Software Development</a>, <br>Prentice Hall 2002
 			</figcaption>
-		</figure>
-	  </section>
-	</section>
+		      </figure>
+		    </section>
+		  </section>
 
-	<section>
-	  <section>
-	    <h2><b>Package Cohesion</b></h2>
-	  </section>
+		  <section>
+		    <section>
+		      <h2><b>Package Cohesion</b></h2>
+		    </section>
 
-	  <section>
-	  <h2>Open-Closed Principle</h2>
-	  <blockquote class="fragment" style="text-align: left;">
-	    &ldquo;Software entities should be open for extension, but closed for modification.&rdquo;
-	  </blockquote>
-	  <figure >
-	    <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">
-	      <img style="padding-right: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/Client_Server.svg" alt="Client-Server" class="fragment">	
+		    <section>
+		      <h2>Open-Closed Principle</h2>
+		      <blockquote class="fragment" style="text-align: left;">
+			&ldquo;Software entities should be open for extension, but closed for modification.&rdquo;
+		      </blockquote>
+		      <figure >
+			<a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">
+			  <img style="padding-right: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/Client_Server.svg" alt="Client-Server" class="fragment">	
 
-	    </a>
-	    <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">
-	      <img style="padding-left: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/Client_Interface_Server.svg" alt="Client-Interface-Server" class="fragment">	
-	    </a>
-	    
-	    <figcaption class="fragment" style="font-size: 70%">from <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">Open-Closed</a> Class Design Principle by Bob Martin
-	    </figcaption>
-	  </figure>
-	  </section>
-
-
-	  <section>
-	  <h2>Reuse-Release Equivalence</h2>
-	  <p><br></p>
-	  <blockquote class="fragment"> 
-	    &ldquo;The granule of reuse is the granule of release.&rdquo;
-	  </blockquote>
-	  <p><br>
-	    <ul class="fragment">
-	      <li>only release what you (re)use</li>
-	      <li>keep your codebase <b>clean</b></li>
-	    </ul>
-	  </p>
-	  </section>
-
-	  <section>
-	  <h2>Common-Reuse Principle</h2>
-	  <blockquote class="fragment"> 
-	    &ldquo;Classes in a package are reused together. Reuse one and you reuse them all.&rdquo;
-	  </blockquote>
-	  <figure class="fragment">
-		<a href="http://meetingcpp.de/index.php/br/items/releasing-boost-dependency-analyzer-1-1.html" target="_blank">
-		  <img style="min-width: 45%; max-width: 55%" src="http://meetingcpp.de/system/html/boost154_libxml-f1978c6c.png" alt="Boost dependency graph">	
-		</a>
-		<figcaption style="font-size: 70%" >from <a href="http://meetingcpp.de/index.php/br/items/releasing-boost-dependency-analyzer-1-1.html" target="_blank">meetingcpp.de</a>
-		</figcaption>
-	  </figure>
-	  
-	  <!-- <p><br> -->
-	  <!--   <ul class="fragment"> -->
-	  <!--     <li>proper design contains dependency</li> -->
-	  <!--     <li>trying to isolate reusage is asking for trouble</li> -->
-	  <!--   </ul> -->
-	  <!-- </p> -->
-	  </section>
-
-	  <section>
-	  <h2>Common-Closure Principle</h2>
-	  <p style="font-size: 20%"><br></p>
-	  <blockquote  style="text-align: left;"> 
-	    &ldquo;The classes in a package should be closed together against the same kinds of changes. Changes affecting packges affect all classes in that package and no other packages.&rdquo;
-	  </blockquote>
-	  
-	  <figure class="fragment">
-		<a href="github.com" target="_blank">
-		  <img style="min-width: 40%; max-width: 50%" src="http://upload.wikimedia.org/wikipedia/commons/d/d1/Domino_Cascade.JPG" alt="Dominos">	
-		</a>
-		<figcaption style="font-size: 70%" >from <a href="http://en.wikipedia.org/wiki/Dominoes" target="_blank">wikimedia.org</a>
-		</figcaption>
-	  </figure>
-	  </section>
-
-	</section>
+			</a>
+			<a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">
+			  <img style="padding-left: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/Client_Interface_Server.svg" alt="Client-Interface-Server" class="fragment">	
+			</a>
+			
+			<figcaption class="fragment" style="font-size: 70%">from <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">Open-Closed</a> Class Design Principle by Bob Martin
+			</figcaption>
+		      </figure>
+		    </section>
 
 
-	<section>
-	  <section>
-	    <h2><b>Package Coupling</b></h2>
-	  </section>
+		    <section>
+		      <h2>Reuse-Release<br>Equivalence</h2>
+		      <p><br></p>
+		      <blockquote class="fragment"> 
+			&ldquo;The granule of reuse is the granule of release.&rdquo;
+		      </blockquote>
+		      <p><br>
+			<ul class="fragment">
+			  <li>only release what you (re)use</li>
+			  <li>keep your codebase <b>clean</b></li>
+			</ul>
+		      </p>
+		    </section>
 
-	  <section>
-	  <h2>Acyclic-Dependency Principle</h2>
-	  <p style="font-size: 20%"><br></p>
-	  <blockquote  style="text-align: left;"> 
-	    &ldquo;Allow no cycles in the package-dependency graph.&rdquo;
-	  </blockquote>
-	  
+		    <section>
+		      <h2>Common-Reuse<br>Principle</h2>
+		      <blockquote class="fragment"> 
+			&ldquo;Classes in a package are reused together. Reuse one and you reuse them all.&rdquo;
+		      </blockquote>
+		      <figure class="fragment">
+			<a href="http://meetingcpp.de/index.php/br/items/releasing-boost-dependency-analyzer-1-1.html" target="_blank">
+			  <img style="min-width: 45%; max-width: 55%" src="http://meetingcpp.de/system/html/boost154_libxml-f1978c6c.png" alt="Boost dependency graph">	
+			</a>
+			<figcaption style="font-size: 70%" >from <a href="http://meetingcpp.de/index.php/br/items/releasing-boost-dependency-analyzer-1-1.html" target="_blank">meetingcpp.de</a>
+			</figcaption>
+		      </figure>
+		      
 
-	  
-	<figure >
-	    <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank">
-	      <img style="padding-right: 2%; border: 0; max-width: 70%; min-width: 55%; vertical-align: top" src="local/CyclicPackages.svg" alt="CyclicPackages" class="fragment">	
+		    </section>
 
-	    </a>
-	    <!-- <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank"> -->
-	    <!--   <img style="padding-left: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/CyclicPackages.svg" alt="CyclicPackages" class="fragment">	 -->
-	    <!-- </a> -->
-	    <figcaption class="fragment" >A Cyclic Package Graphs.
-	    </figcaption>
-	  </figure>
+		    <section>
+		      <h2>Common-Closure<br>Principle</h2>
+		      <p style="font-size: 20%"><br></p>
+		      <blockquote  style="text-align: left;"> 
+			&ldquo;The classes in a package should be closed together against the same kinds of changes. Changes affecting packges affect all classes in that package and no other packages.&rdquo;
+		      </blockquote>
+		      
+		      <figure class="fragment">
+			<a href="github.com" target="_blank">
+			  <img style="min-width: 40%; max-width: 50%" src="http://upload.wikimedia.org/wikipedia/commons/d/d1/Domino_Cascade.JPG" alt="Dominos">	
+			</a>
+			<figcaption style="font-size: 70%" >from <a href="http://en.wikipedia.org/wiki/Dominoes" target="_blank">wikimedia.org</a>
+			</figcaption>
+		      </figure>
+		    </section>
 
-	</section>
-	</section>
-<!-- 	<section> -->
-<!-- 		<h1>Code in Science</h1> -->
-<!-- 		<a href="http://blog.f1000research.com/2014/04/04/reproducibility-tweetchat-recap/" target="_blank"> -->
-<!-- 			<img width="496" style="max-width: 60%" src="local/reproducibility-small.jpg" alt="blog.f1000research.com"> -->
-<!-- 		</a> -->
-<!-- 		<h2>Reproducibility?</h2> -->
-<!-- 	</section> -->
-
-<!-- 	<section> -->
-<!-- 		<h3><b>Preclinical Cancer Research</b></h3> -->
-<!-- 		<figure> -->
-<!-- 			<img style="max-width: 100%" src="local/nature_drug_development.png" alt="Nature Comment"> -->
-<!-- 			<figcaption>from <a href="http://www.nature.com/nature/journal/v483/n7391/full/483531a.html" target="_blank">Nature 2012</a> -->
-<!-- 			</figcaption> -->
-<!-- 		</figure> -->
-<!-- 	</section> -->
-
-<!-- 	<section> -->
-<!-- 		<h3><b>Preclinical Cancer Research</b></h3> -->
-		
-<!-- 		<figure > -->
-<!-- 		  <center> -->
-<!-- 		    <div id="donutchart" style="min-height: 500px; max-height: 120%; max-width: 70%"></div> -->
-<!-- 		    </center> -->
-<!-- 		  <figcaption>from <a href="http://www.nature.com/nature/journal/v483/n7391/full/483531a.html" target="_blank">[doi:10.1038/483531a]</a> -->
-<!-- 			</figcaption> -->
-<!-- 		</figure> -->
-<!-- 	</section> -->
-	  
-<!-- 	<section> -->
-<!-- 		<h2>Scientific Computing?</h2> -->
-<!-- 		<figure>	 -->
-<!-- 			<a href="http://reproducible-research.github.io/scipy-tutorial-2014/" target="_blank"> -->
-<!-- 				<img width="700" style="max-width: 90%" src="local/scipy2014_reproducible_research.svg" alt="SciPy2014"> -->
-<!-- 			</a> -->
-<!-- 			<figcaption> -->
-<!-- 				Scipy 2014: <a href="http://reproducible-research.github.io/scipy-tutorial-2014/" target="_blank">Reproducible Research</a> -->
-<!-- 			</figcaption> -->
-<!-- 		</figure> -->
-		
-<!-- 	</section> -->
-
-<!-- 	<section> -->
-<!-- 		<h2>Science!</h2> -->
-<!-- 		<p> -->
-<!-- 		<blockquote class="fragment" style="text-align: left;"> -->
-<!-- 		  &ldquo;It is clear that scientific code is full of if-else blocks and ugly ... it's science!&rdquo; -->
-<!-- 		  <footer style="font-size: 70%; text-align: right;"><cite>-- anonymous PI</cite></footer> -->
-<!-- 		</blockquote> -->
-<!-- 		<br> -->
-<!-- 		<blockquote class="fragment" style="text-align: left;"> -->
-<!-- 		  &ldquo;We don't need software engineering ... it's just plotting the data!&rdquo; -->
-<!-- 		  <footer style="font-size: 70%; text-align: right;"><cite>-- anonymous PI</cite></footer> -->
-<!-- 		</blockquote> -->
-<!-- 		</p> -->
-<!-- 	</section> -->
-
-<!-- 	</section> -->
-
-<!-- 	<section> -->
-<!-- 	  <section> -->
-<!-- 	    <h2>Test-Driven<br>Development</h2> -->
-<!-- 	    <figure> -->
-<!-- 	      <a href="http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530" target="_blank"> -->
-<!-- 		<img height="400" style="max-width: 70%" src="http://ecx.images-amazon.com/images/I/71lpKZxrK6L.jpg" > -->
-<!-- 	      </a> -->
-<!-- 	      <a href="http://en.wikipedia.org/wiki/Kent_Beck" target="_blank"> -->
-<!-- 		<img style="max-width: 40%" src="http://bzmedia.com/agility/EGRPH2571.jpg" > -->
-<!-- 	      </a> -->
-<!-- 	      <figcaption> -->
-<!-- 		by Kent Beck (2002) -->
-<!-- 	      </figcaption> -->
-<!-- 	    </figure> -->
-	    
-<!-- 	    <\!-- <a href="https://openclipart.org/detail/179383/battery-levels.-niveles-de-baterÃ­a-by-ehecatl1138-179383" target="_blank"> -->
-<!-- 		 <img height="400" src="https://openclipart.org/people/Ehecatl1138/Battery_levels.svg" ></a> -\-> -->
-	    
-<!-- 	  </section> -->
-
-<!-- 	  <section> -->
-<!-- 	    <h2>How?</h2> -->
-<!-- 	    <figure> -->
-<!-- 	      <a href="http://octoberclub.files.wordpress.com/2011/10/red-green-refactor.png" target="_blank"> -->
-<!-- 		<img width="700" style="max-width: 70%" src="http://octoberclub.files.wordpress.com/2011/10/red-green-refactor.png"  ></a> -->
-<!-- 	      <figcaption> -->
-<!-- 		by <a href="http://octoberclub.files.wordpress.com/2011/10/red-green-refactor.png" target="_blank">Nat Pryce</a> -->
-<!-- 	      </figcaption> -->
-<!-- 	    </figure> -->
-	    
-<!-- 	  </section> -->
-<!-- 	  </section> -->
-	
-
-<!-- 	  <section> -->
-<!-- 	    <h1><b>Live Demo</b></h1> -->
-<!-- 	    <p>Will be in python for faster digestion!</p> -->
-<!-- 	  </section> -->
-
-<!-- 	<section>	   -->
-<!-- 	  <section> -->
-<!-- 	    <h2><b>Recap</b></h2>  -->
-<!-- 	    <div class="fragment" style="text-align: left;"><p><b>Unit Test</b><br>method to test smallest testable part of an application</p></div> -->
-<!-- 	    <div class="fragment" style="text-align: left;"><p><b>Test Suite</b><br>sequence of Unit Tests that validate the same entity</p></div> -->
-<!-- 	    <div class="fragment" style="text-align: left;"><p><b>Test Fixture</b><br>called before/after execution of unit test to setup or tear down test environment</p></div> -->
-<!-- 	  </section> -->
-	  
-<!-- 	  <section> -->
-<!-- 	    <h2><b>What to test?</b></h2>  -->
-<!-- 	    <h3 class="fragment">The responsibility of the class/function!<br /><br /></h3> -->
-<!-- 	    <p class="fragment"><b><a href="http://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">Single-Responsibility Principle</a></b><br> -->
-<!-- 	      <blockquote style="text-align: left;" cite="http://en.wikipedia.org/wiki/Single_responsibility_principle" class="fragment"> -->
-<!-- 		&ldquo;Every context (class, function, variable, etc.) should have a single responsibility, and that responsibility should be entirely encapsulated by the context.&rdquo; -->
-<!-- 	      <footer style="font-size: 70%; text-align: right;" ><cite>-- Robert C. Martin, Agile Software Development</cite></footer></blockquote> -->
-<!-- 	      <br> -->
-<!-- 	    </p> -->
-<!-- 	  </section> -->
-
-<!-- 	  <section> -->
-<!-- 	    <p> -->
-<!-- 	    <h2>Quiz</h2><br> -->
-<!-- 	    How many responsibilities do you see?<br> -->
-<!-- 	    <pre><code data-trim> -->
-<!-- 		class modem(): -->
-		
-<!-- 		  def dial(self, number_string): -->
-<!-- 		    pass -->
-
-<!-- 		  def hangup(self): -->
-<!-- 		    pass -->
-
-<!-- 		  def send(self, message): -->
-<!-- 		    pass -->
-
-<!-- 		  def recv(self): -->
-<!-- 		    pass -->
-
-<!-- 	    </code></pre> -->
-	    
-<!-- 	    <blockquote style="text-align: left;" cite="http://en.wikipedia.org/wiki/Single_responsibility_principle" class="fragment"> -->
-<!-- 		&ldquo;A responsibility [of a context is] a reason to change.&rdquo; -->
-<!-- 		<footer style="font-size: 70%; text-align: right;"><cite>-- Robert C. Martin, Agile Software Development</cite></footer> -->
-<!-- 	      </blockquote> -->
-
-<!-- 	    </p> -->
-	    
-<!-- 	  </section> -->
-
-<!-- 	</section> -->
-	
-<!-- 	<section> -->
-<!-- 	  <section> -->
-<!-- 	    <h2><b>Exercise</b></h2> -->
-<!-- 	    <h3><a href="http://cyber-dojo.org/" target="_blank" name="cyber-dojo.org">cyber-dojo.org</a></h3> -->
-<!-- 	    <ul> -->
-<!-- 	      <li>Join into Pairs with one notebook</li> -->
-<!-- 	      <li>Decide on a language</li> -->
-<!-- 	      <li><b>Calc Stats</b></li> -->
-<!-- 	    </ul> -->
-<!-- 	  </section> -->
-	  
-<!-- 	  <section> -->
-<!-- 	    <h2>Discussion</h2> -->
-<!-- 	    <ul> -->
-<!-- 	      <li class="fragment">What are your feelings about the implementation?</li> -->
-<!-- 	      <li class="fragment">What is the difference to your old style of coding?</li> -->
-<!-- 	    </ul> -->
-<!-- 	  </section> -->
-	  
-<!-- 	  <section> -->
-<!-- 	    <div style="background-color: #E62F0A; width: 100%; height: 400%; position: absolute;  top: -50%; left: 50%; z-index: -1; opacity: 0.45;"> -->
-<!-- 	    </div> -->
-	    
-<!-- 	    <h2>Summary</h2> -->
-	    
-<!-- 	    <div style="width: 50%; display: inline-block; margin-right: 9%; vertical-align: top;"> -->
-<!-- 	      <p style="text-align: right;; font-size: 120%"><br> -->
-<!-- 		<ul style="line-height: 150%"> -->
-<!-- 		  <li class="fragment">Incremental Design</li> -->
-<!-- 		  <li class="fragment">Reproducibility</li> -->
-<!-- 		  <li class="fragment">Confidence</li> -->
-<!-- 		  <li class="fragment">Documentation</li> -->
-<!-- 		</ul><br><br> -->
-<!-- 	      </p> -->
-<!-- 	    </div> -->
-
-<!-- 	    <div class="fragment" style="background-color: #01BE4C; width: 100%; height: 400%; position: absolute; top: -50%; right: 50%; z-index: -1; opacity: 0.45;" > -->
-<!-- 	    </div> -->
-<!-- 	    <div style="width: 40%; display: inline-block;" > -->
-<!-- 	      <p style="text-align: left;"><br> -->
-<!-- 	    	<ul style="line-height: 150%;"> -->
-<!-- 		  <li class="fragment">code is less bug free</li> -->
-<!-- 		  <li class="fragment">human interaction?</li> -->
-<!-- 		  <li class="fragment">more source code</li> -->
-<!-- 		  <li class="fragment">can be misleading</li> -->
-<!-- 		</ul> -->
-<!-- 		<br><br> -->
-<!-- 	      </p> -->
-<!-- 	    </div> -->
-<!-- 	    <h3 class="fragment"><a href="#/10">Ongoing Discussion!</a></h3> -->
-<!-- 	  </section> -->
-<!-- 	</section> -->
-
-<!-- 	<section> -->
-<!-- 	  <section> -->
-<!-- 	    <h2>Some Advanced TDD</h2> -->
-<!-- 	    <figure> -->
-<!-- 	      <img width="400" style="max-width: 40%" src="http://upload.wikimedia.org/wikipedia/commons/7/7c/Samurai_with_sword.jpg"> -->
-<!-- 	      <figcaption>from <a href="http://en.wikipedia.org/wiki/Samurai" target="_blank">wikipedia</a></figcaption></figure> -->
-<!-- 	  </section> -->
-	  
-<!-- 	  <section> -->
-<!-- 	    <h2>Test Doubles and Mocks</h2> -->
-<!-- 	    <figure> -->
-<!-- 	    <a href="https://openclipart.org/detail/118831/traffic-light-green-dan--01-by-anonymous"> -->
-<!-- 	      <img width="300" style="max-width: 30%" src="https://openclipart.org/people/Anonymous/traffic_light_green_dan__01.svg" /> -->
-<!-- 	    </a> -->
-<!-- 	    <figcaption>from <a href="https://openclipart.org/detail/118831/traffic-light-green-dan--01-by-anonymous" target="_blank">openclipart.org</a></figcaption></figure> -->
-	    
-<!-- 	    <p class="fragment"><br> -->
-<!-- 	      <a href="http://martinfowler.com/articles/mocksArentStubs.html">Detailed Discussion</a> by Martin Fowler</p> -->
-<!-- 	  </section> -->
-	  
-<!-- 	  <section> -->
-<!-- 	    <h2>Build system Integration</h2> -->
-<!-- 	    <pre><code data-trim> -->
-<!-- $ ctest -R b.*impl -->
-<!-- Test project /home/psteinb/development/sqy/build -->
-<!--     Start  4: background_scheme_impl -->
-<!-- 1/3 Test  #4: background_scheme_impl ...........   Passed    0.00 sec -->
-<!--     Start  6: bitswap_scheme_impl -->
-<!-- 2/3 Test  #6: bitswap_scheme_impl ..............   Passed    0.00 sec -->
-<!--     Start 11: bench_utils_impl -->
-<!-- 3/3 Test #11: bench_utils_impl .................   Passed    0.02 sec -->
-
-<!-- 100% tests passed, 0 tests failed out of 3 -->
-
-<!-- Total Test time (real) =   0.02 sec -->
-<!-- 	    </code></pre> -->
-<!-- 	  </section> -->
-
-<!-- 	  <section> -->
-<!-- 	    <h2>Documentation</h2> -->
-<!-- 	    <p class="fragment"><b>showcase API</b><br>	    </p> -->
-<!-- 	  	    <pre class="fragment"><code data-trim> -->
-<!-- def test_simple_construction(self): -->
-<!--   local_instance = foo() -->
-<!--   return self.assertTrue(len(local_instance)<1) -->
-
-<!-- def test_iterator_construction(self): -->
-<!--   local_instance = foo(xrange(1,10)) -->
-<!--   return self.assertTrue(len(local_instance)==10) -->
-<!-- 	    </code></pre> -->
+		  </section>
 
 
+		  <section>
+		    <section>
+		      <h2><b>Package Coupling</b></h2>
+		    </section>
 
-<!-- 	    <p class="fragment"><b>bug logging -->
-<!-- 	    </b><br>	    </p> -->
-<!-- 	    <pre class="fragment"><code data-trim> -->
-<!-- def test_bug_42_init_failed(self): -->
-<!--   #... -->
-<!--   return self.assertTrue(works_now) -->
-<!-- 	    </code></pre> -->
+		    <section>
+		      <h2>Acyclic-Dependency<br>Principle</h2>
+		      <p style="font-size: 20%"><br></p>
+		      <blockquote> 
+			&ldquo;Allow no cycles in the package-dependency graph.&rdquo;
+		      </blockquote>
+		      
+		      <figure class="fragment">
+			<a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank" >
+			  <img style="padding-right: 2%; border: 0; max-width: 70%; min-width: 55%; vertical-align: top" src="local/CyclicPackages.svg" alt="CyclicPackages" class="stretch">	
+			</a>
+			<!-- <a href="http://www.objectmentor.com/resources/articles/ocp.pdf" target="_blank"> -->
+			<!--   <img style="padding-left: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/CyclicPackages.svg" alt="CyclicPackages" class="fragment">	 -->
+			<!-- </a> -->
+			<figcaption class="fragment" >Cyclic package dependecy graphs are not good!
+			</figcaption>
+		      </figure>
+		    </section>
 
-	    
-<!-- 	    <p class="fragment"><b>showcase corner cases -->
-<!-- 	    </b><br></p> -->
-<!-- 	    <pre class="fragment"><code data-trim> -->
-<!-- def test_negative_values_throw(self): -->
-<!--   return self.assertThrows(foo(-1)) -->
-<!-- 	    </code></pre> -->
-<!-- 	  </section> -->
-<!-- 	</section> -->
+		    <section>
+		      <h2>Stable-Dependency<br>Principle</h2>
+		      <p style="font-size: 50%"><br></p>
+		      <blockquote> 
+			&ldquo;Depend in the direction of stability! ... Stable is what is not easily moved.&rdquo;
+		      </blockquote>
+		      <p style="font-size: 50%"><br></p>
+		      <figure >
+			<img style="padding-right: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/StablePackage.svg" alt="Stable" class="fragment">	
+			<img style="padding-left: 2%; border: 0; max-width: 40%; min-width: 45%; vertical-align: top" src="local/UnstablePackage.svg" alt="Unstable" class="fragment">	
+			<figcaption class="fragment">Stable Package X and Unstable Package Y
+			</figcaption>
+		      </figure>
+		    </section>
 
-<!-- 	<section> -->
-<!-- 	  <h2>Summary</h2> -->
-<!-- 	  <ul style="line-height: 150%; font-size: 120%"> -->
-<!-- 	    <li class="fragment">test-driven development has a learning curve</li> -->
-<!-- 	    <li class="fragment">creates confidence and reproducibility</li> -->
-<!-- 	    <li class="fragment">good software design step-by-step</li> -->
-<!-- 	    <li class="fragment">no silver bullet!</li> -->
-<!-- 	  </ul> -->
-<!-- 	</section> -->
+		    <section>
+		      <h2>Stability Metrics</h2>
+		      <p style="text-align: left;">Afferent Couplings $C_{a}$<br>
+			Number of classes outside this package that depend on it
+			<br><br>
+			Efferent Couplings $C_{e}$<br>
+			Number of classes inside this package that depend on outside classes<br><br>
+			Instability $I$<br>
+			$$ I = \frac{C_{e}}{C_{e} + C_{a}} $$
+		      </p>
+		    </section>
 
-<!-- 	<section> -->
-<!-- 	<h2>Thank you for your attention!</h2> -->
-<!-- 	<figure> -->
-<!-- 	  <a href="http://upload.wikimedia.org/wikipedia/commons/7/7e/Sleeping_students.jpg"> -->
-<!-- 	    <img width="600" style="max-width: 60%" src="http://upload.wikimedia.org/wikipedia/commons/7/7e/Sleeping_students.jpg" /> -->
-<!-- 	  </a> -->
-<!-- 	  <figcaption>from <a href="http://upload.wikimedia.org/wikipedia/commons/7/7e/Sleeping_students.jpg" target="_blank">wikimedia.org</a> -->
-<!-- 	  </figcaption> -->
-<!-- 	</figure> -->
-<!-- 	</section> -->
+		    <section>
+		      <h2>Instability<br>is normal</h2>
+		      <p style="font-size: 50%"><br></p>
+		      <figure >
+			<img style="padding-right: 2%; border: 0; max-width: 70%; min-width: 60%; vertical-align: top" src="local/InstabilityExample.svg" alt="Instability">	
+		      </figure>
 
-<!-- 	<section> -->
-<!-- 	  <h2>Literature</h2> -->
-<!-- 	  <ul style="text-align: left;"> -->
-<!-- 	    <li>Robert C. Martin, <em>Agile Software Development: Principles, Patterns and Practices.</em> Pearson Education, 2002 </li> -->
-<!-- 	    <li>Kent Beck, <em>Test-Driven Development by Example.</em> Addison-Wesley Longman, 2002</li> -->
-<!-- 	    <li>Overload Magazine, <a href="http://accu.org/index.php/journals/c340/" target="_blank">Issue 122</a></li> -->
-<!-- 	  </ul> -->
-<!-- 	  </section> -->
+		    </section>
 
-<!-- 	  <section> -->
-<!-- 	  <h2>Libraries</h2> -->
-<!-- 	  <ul style="text-align: left;"> -->
-<!-- 	    <li><em>Java</em>: JUnit, Fitnesse</li> -->
-<!-- 	    <li><em>python</em>: unittest, nose, pytest</li> -->
-<!-- 	    <li><em>c++</em>: cpptest, boost utf, google test/mock</li> -->
-<!-- 	  </ul> -->
-<!-- 	  </section> -->
+		    <section>
+		      <h2>Stable-Abstractions<br>Principle</h2>
+		      <p style="font-size: 50%"><br></p>
+		      <blockquote> 
+			&ldquo;A package should be as abstract as it is stable.&rdquo;
+		      </blockquote>
+		      <p style="text-align: left;" class="fragment">
+			Number of classes inside package $N_{c}$<br>
+			Number of abstract classes inside package $N_{a}$
+			<br><br>
+			Abstractness $A$<br>
+			$$ A = \frac{N_{a}}{N_{e}}$$
+		      </p>
+		    </section>
+
+		    <section>
+		      <h2 style="top: -20%">A versus I</h2>
+		      <figure >
+			<img style="padding-right: 2%; border: 0; max-width: 60%; min-width: 55%; vertical-align: top" src="local/r/blank_oometric.svg" alt="blank">	
+		      </figure>
+		    </section>
+
+		    <section>
+		      <h2 style="top: -20%">A-I on neo4j</h2>
+		      <figure>
+			<a href="http://javadepend.wordpress.com/2013/04/14/abstractness-vs-instability-neo4j-case-study/" target="_blank">
+			  <img style="min-width: 55%; max-width: 60%" src="http://javadepend.files.wordpress.com/2013/04/abstractnessvsinstability.png" alt="Neo4J">	
+			</a>
+			<figcaption style="font-size: 70%" >from <a href="http://javadepend.wordpress.com/2013/04/14/abstractness-vs-instability-neo4j-case-study/" target="_blank">javadepend.wordpress.com</a>
+			</figcaption>
+		      </figure>
+		    </section>
+
+		    <section>
+		      <h2 style="top: -20%">A-I on ImageJ</h2>
+		      <figure>
+			<a href="http://depfind.sourceforge.net/" target="_blank">
+			  <img style="min-width: 55%; max-width: 60%" src="local/r/ij148.data_oometric.svg" alt="ImageJ1">
+			</a>
+			<figcaption style="font-size: 70%" ><a href="http://imagej.nih.gov/ij/download/linux/ij148-linux64.zip" target="_blank">ImageJ1</a> analysed by <a href="http://depfind.sourceforge.net/" target="_blank">depfind.sourceforge.net</a>
+			</figcaption>
+		      </figure>
+		    </section>
+
+		  </section>
+
+		  <section>
+		    <section>
+		    <h2>Summary</h2>
+		    <ul style="font-size: 120%; line-height: 150%">
+		      <li>Modular reusable software contains dependencies</li>
+		      <li>Dependencies should be clean</li>
+		      <li>Dependencies should be directed</li>
+		      <li>Stability and abstractness should be balanced</li>
+		      <li>Metrics are good, but may be misleading</li>
+		    </ul>
+		  </section>
+
+		    <section>
+		    <h2>Thank you for<br>your attention</h2>
+		    <figure>
+			<a href="http://commons.wikimedia.org/wiki/File:Flickr_-_Official_U.S._Navy_Imagery_-_Runners_near_the_finish_line..jpg" target="_blank">
+			  <img style="min-width: 55%; max-width: 60%" src="http://upload.wikimedia.org/wikipedia/commons/6/61/Flickr_-_Official_U.S._Navy_Imagery_-_Runners_near_the_finish_line..jpg" alt="Finish">
+			</a>
+			<figcaption style="font-size: 70%" >from <a href="http://commons.wikimedia.org/wiki/File:Flickr_-_Official_U.S._Navy_Imagery_-_Runners_near_the_finish_line..jpg" target="_blank">wikimedia.org</a>
+			</figcaption>
+		      </figure>
+		  </section>
+
+		  </section>
+
 
 		</div>
 
@@ -613,6 +404,10 @@ configure: error: guile-config is broken
 	  // Parallax scrolling
 	  // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
 	  // parallaxBackgroundSize: '2100px 900px',
+	  math: {
+	  mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+	  config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+	  },
 
 	  // Optional libraries used to extend on reveal.js
 	  dependencies: [
@@ -621,7 +416,8 @@ configure: error: guile-config is broken
 	  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 	  { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-	  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+	  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+	  { src: 'plugin/math/math.js', async: true }
 	  ]
 	  });
 
